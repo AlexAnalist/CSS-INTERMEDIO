@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skills List</title>
+    </head>
+    <body>
+        <div class="card">
+            <div class="header">
+                <h2>Learn new Skills</h2>
+                <button>View All</button>
+            </div> 
+            <div class="skills">
+                <span class="bar testing"></span>
+                    <p><strong>QA Testing</strong>- 3 cursos</p>
+                
+            </div>
+            <div class="skills">
+                <span class="bar front"></span>
+                    <p><strong>Front-End</strong>- 4 cursos</p>
+                
+            </div>
+            <div class="skills">
+                <span class="bar back"></span>
+                   <p><strong>Back-End</strong>- 10 cursos</p>
+                
+            </div>
+        </div>
+    </body>
+</html>
+
+<style>
+    body {
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: 320px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.header button {
+  background: none;
+  border: none;
+  color: #0077b6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding: 12px 0;
+}
+
+.bar {
+  width: 6px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 4px;
+}
+
+.testing { background-color: #ff6b6b; }
+.front { background-color: #f9c74f; }
+.back { background-color: #90be6d; }
+
+</style>

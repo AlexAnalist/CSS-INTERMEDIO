@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Eventos Próximos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+
+    .filters {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-btn {
+      background-color: #e0e0e0;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+
+    .filter-btn:hover {
+      background-color: #d5d5d5;
+    }
+
+    .event-card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: relative;
+    }
+
+    .event-card.cancelled {
+      opacity: 0.6;
+      border-left: 4px solid #d32f2f;
+    }
+
+    .event-date {
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 0.3rem;
+    }
+
+    .event-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .event-description {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 0.8rem;
+    }
+
+    .see-more {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #1976d2;
+      font-weight: 600;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .see-more:hover {
+      color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="filters">
+        <h1>Eventos próximos</h1>
+        <button class="filter-btn">TODOS</button>
+        <button class="filter-btn">HOY</button>
+        <button class="filter-btn">MAÑANA</button>
+    </div>
+
+    <!-- Evento cancelado -->
+    <div class="event-card cancelled">
+        <div class="event-date">Cancelado Lun 23, 14:00 - 16:00 hs.</div>
+        <div class="event-title">Lorem impsum facto</div>
+      <div class="event-description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repudiandae expedita reiciendis, quis, cumque adipisci itaque tempora unde explicabo rerum in repellat aut vero saepe voluptatum ducimus minus exercitationem veritatis!
+      </div>
+      <div class="see-more">+ Ver más</div>
+    </div>
+
+    <!-- Evento normal -->
+    <div class="event-card">
+      <div class="event-date">Lun 23, 14:00 - 16:00 hs.</div>
+      <div class="event-title">Lorem impsum facto</div>
+      <div class="see-more">+ Ver más</div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-date">Lun 23, 14:00 - 16:00 hs.</div>
+      <div class="event-title">Lorem impsum facto</div>
+      <div class="event-description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repudiandae expedita reiciendis, quis, cumque adipisci itaque tempora unde explicabo rerum in repellat aut vero saepe voluptatum ducimus minus exercitationem veritatis!
+      </div>
+      <div class="see-more">+ Ver más</div>
+    </div>
+  </div>
+</body>
+</html>

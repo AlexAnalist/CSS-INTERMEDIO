@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto - LightSaber</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://th.bing.com/th/id/R.ec3b721b99742ff04758ad67c6a9e1bd?rik=yTR84238lykYeA&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2flightsaber-star-wars-pic.jpg&ehk=bWExwdvVUdj099T43kI5i8giIXz3J1Jie%2bKh4B2yT2s%3d&risl=&pid=ImgRaw&r=0" alt="LightSaber">
+    </div>
+    <div class="product-info">
+      <h1 class="product-title">LightSaber<br>Scale</h1>
+      <div class="tags">
+        <button>STAR WARS</button>
+        <button>MERCHANDISING</button>
+        <button>SCI FI</button>
+      </div>
+      <h3 class="section-title">DESCRIPCIÓN</h3>
+      <p class="product-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aliquam mollitia dolore adipisci blanditiis 
+        praesentium deleniti option impedit reiciendis! Officiis quod eum id hic distinctio asperiores labore eveniet nobis odit.
+      </p>
+      <h3 class="section-title">PRECIO</h3>
+      <P class="precio">
+         $200
+      </P>
+      <button class="btn-com">COMPRAR</button>
+      
+
+
+    </div>
+  </div>
+</body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .product-card{
+    width: 400px;
+    background-color: #2E2F95;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .product-image{
+    background-color: #000000;
+    padding: 40px 0;
+  }
+
+  .product-image:hover{
+    transition: scale(1.1);
+  }
+
+  .product-info{
+    padding: 30px;
+    color: #fff;
+  }
+
+  .product-title{
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .tags{
+    display: flex; 
+    justify-content: center;
+    gap: 10px; 
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .tags button{
+    background-color: #2E2F95;
+    font-size: 0.8rem;
+    color: #fff;
+    border: 1px solid #d61c3b;
+    padding: 5px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .tags button:hover{
+    background-color: #d61c3b;
+    border-color: #2E2F95;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(214, 28, 59, 0.3);
+
+  }
+
+  .section-title{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  .product-description{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #cfd8dc;
+
+  }
+
+  .precio{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #cfd8dc;
+
+  }
+
+
+
+  .btn-com {
+    background-color: #d61c3b;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .btn-com:hover {
+    background-color: #b91833;
+    transform: translateY(-2px);
+  }
+
+
+</style>
+

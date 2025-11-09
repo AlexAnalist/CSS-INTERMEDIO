@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Protección de Cuenta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Tarjeta principal */
+    .card {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Ícono de seguridad */
+    .icon {
+      font-size: 48px;
+      color: #4CAF50;
+      margin-bottom: 1rem;
+    }
+
+    /* Título */
+    h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    /* Correo principal */
+    .email {
+      margin: 0.5rem 0 1rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Mensaje explicativo */
+    .message {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Etiqueta y correo de recuperación */
+    .recovery-label {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.3rem;
+    }
+
+    .recovery-email {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Botones */
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      margin: 0.3rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-update {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+
+    .btn-update:hover {
+      background-color: #d5d5d5;
+    }
+
+    .btn-confirm {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .btn-confirm:hover {
+      background-color: #43a047;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🛡️</div>
+    <h2>Protect your account</h2>
+    <p class="email">email@address.com</p>
+    <p class="message">
+      We use your email address if you get locked out of your account or if we notice suspicious activity.
+    </p>
+    <div class="recovery-label">Recovery email</div>
+    <div class="recovery-email">rec-email@address.com</div>
+    <button class="btn btn-update">Update</button>
+    <button class="btn btn-confirm">Confirm</button>
+  </div>
+</body>
+</html>

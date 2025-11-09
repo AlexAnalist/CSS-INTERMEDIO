@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donación</title>
+  <style>
+    body {
+      background-color: #f3e8ff; /* fondo lila claro */
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .donation-card {
+      background-color: white;
+      border-radius: 16px;
+      padding: 24px;
+      width: 320px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .donation-card h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .donation-options {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    .donation-options button {
+      background-color: #e0d4f7;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .donation-options button:hover {
+      background-color: #d1bdf0;
+    }
+
+
+    .continue-btn {
+      background-color: #a259ff;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .continue-btn:hover {
+      background-color: #8e44ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="donation-card">
+    <h2>Donate to help keep the internet free and open!</h2>
+
+    <div class="donation-options">
+      <button>$5</button>
+      <button>$10</button>
+      <button>$15</button>
+      <button>$ Other</button>
+    </div>
+
+    <button class="continue-btn">Continue</button>
+  </div>
+</body>
+</html>
