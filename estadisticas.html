@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Results</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #131314;
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        /* Results Header */
+        .results-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .results-header h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        .results-header p {
+            font-size: 1.2em;
+            color: #d4e2e3;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .stat-card {
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 3em;
+            font-weight: bold;
+            color: #3498db; /* A professional blue color */
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .stat-description {
+            font-size: 1.1em;
+            color: #5d6d7e;
+            line-height: 1.5;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <section class="container">
+        <!-- Header Section -->
+        <div class="results-header">
+            <h2>Our Results</h2>
+            <p>We're proud of the impact we've made for our users and our growing community.</p>
+        </div>
+
+        <!-- Stats/Features Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">70%</span>
+                <p class="stat-description">We increased the feature adoption of our users with 70%.</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">225</span>
+                <p class="stat-description">New customers opted for our PRO features.</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">2M</span>
+                <p class="stat-description">Notifications sent through our and third-party platforms.</p>
+            </div>
+        </div>
+    
+    </section>
+
+</body>
+</html>2

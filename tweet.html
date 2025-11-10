@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweet</title>
+  <style>
+    body {
+      background-color: #1da1f2;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .tweet {
+      background-color: #fff;
+      border-radius: 8px;
+      width: 600px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .tweet-header {  /*Aquí Flexbox coloca el avatar y los datos del usuario (nombre y @handle) uno al lado del otro, y los centra verticalmente.*/
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .tweet-header div { /*Dentro del encabezado, este div usa Flexbox en columna para apilar el nombre y el handle verticalmente.*/
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tweet-header .name {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .tweet-header .handle {
+      color: #657786;
+      font-size: 14px;
+    }
+
+    .tweet-content {
+      font-size: 16px;
+      color: #0f1419;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .tweet-date {
+      color: #657786;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e1e8ed;
+      margin: 10px 0;
+    }
+
+    .tweet-stats {
+      color: #0f1419;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .tweet-stats span {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .tweet-actions { /*Flexbox alinea los textos de “Share”, “Retweet” y “Like” en una sola línea, con espacio entre ellos (gap).*/
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      color: #0f1419;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .tweet-actions span:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="tweet">
+    <div class="tweet-header">
+      <img class="avatar" src="https://th.bing.com/th/id/R.fa14f204e9e0b2c21c0a4c5e4b0cdacc?rik=acToYM3rTt0j6Q&riu=http%3a%2f%2fwww.historyanswers.co.uk%2fwp-content%2fuploads%2f2015%2f10%2fAda_Lovelace_portrait-1024x858.jpg&ehk=wAM3hCQSYkmsWW%2fskVhHMHEp6mW0SPQdT5NAIC9MmcY%3d&risl=&pid=ImgRaw&r=0" alt="Avatar de Ada Lovelace">
+      <div>
+        <span class="name">Ada Lovelace</span>
+        <span class="handle">@adalove</span>
+      </div>
+    </div>
+
+    <div class="tweet-content">
+      The Analytical Engine has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform.
+    </div>
+
+    <div class="tweet-date">2:32 PM · 12 Mayo de 1842</div>
+
+    <hr>
+
+    <div class="tweet-stats">
+      <span>203</span> Retweets  <span>532</span> Likes
+    </div>
+
+    <div class="tweet-actions">
+      <span>Share</span>
+      <span>Retweet</span>
+      <span>Like</span>
+    </div>
+  </div>
+</body>
+</html>

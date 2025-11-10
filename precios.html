@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Encabezado */
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .pricing-header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .pricing-header p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+        }
+        
+        
+        .prize-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        
+        .prize-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .prize-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        
+        .card-header {
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .card-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .price-period {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        .card-description {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+    
+        .card-features {
+            padding: 30px;
+        }
+        
+        .feature-list {
+            list-style: none;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f1f1f1;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list li::before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        
+        .card-button {
+            padding: 0 30px 30px;
+            text-align: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .prize-card.featured {
+            transform: scale(1.05);
+        }
+        
+        .prize-card.featured .card-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .prize-card.featured .btn {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .prize-card.featured .btn:hover {
+            box-shadow: 0 5px 15px rgba(240, 147, 251, 0.4);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+       <div class="pricing-header">
+            <h1>Pricing table</h1>
+            <p>A simple pricing table.</p>
+        </div>
+        
+     
+        <div class="prize-grid">
+         
+            <div class="prize-card">
+                <div class="card-header">
+                    <h2>Startup</h2>
+                    <div class="price">$9.90</div>
+                    <p class="card-description">Small business solution</p>
+                </div>
+                <div class="card-features">
+                    <ul class="feature-list">
+                        <li>Unlimited calls</li>
+                        <li>Free hosting</li>
+                        <li>40MB of storage space</li>
+                    </ul>
+                </div>
+                <div class="card-button">
+                    <button class="btn">Choose plan</button>
+                </div>
+            </div>
+            
+        
+            <div class="prize-card featured">
+                <div class="card-header">
+                    <h2>Medium</h2>
+                    <div class="price">$29.90</div>
+                    <p class="card-description">Medium business solution</p>
+                </div>
+                <div class="card-features">
+                    <ul class="feature-list">
+                        <li>Unlimited calls</li>
+                        <li>Free hosting</li>
+                        <li>10 hours of support</li>
+                        <li>Social media integration</li>
+                        <li>1GB of storage space</li>
+                    </ul>
+                </div>
+                <div class="card-button">
+                    <button class="btn">Choose plan</button>
+                </div>
+            </div>
+            
+            
+            <div class="prize-card">
+                <div class="card-header">
+                    <h2>Large</h2>
+                    <div class="price">$59.90</div>
+                    <p class="card-description">Gigantic business solution</p>
+                </div>
+                <div class="card-features">
+                    <ul class="feature-list">
+                        <li>Unlimited calls</li>
+                        <li>Free hosting</li>
+                        <li>Unlimited hours of support</li>
+                        <li>Social media integration</li>
+                        <li>Analytics integration</li>
+                        <li>Unlimited storage space</li>
+                    </ul>
+                </div>
+                <div class="card-button">
+                    <button class="btn">Choose plan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

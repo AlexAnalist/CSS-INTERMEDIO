@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Encabezado */
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        
+        .services {
+            padding: 80px 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-icon-web {
+            height: 120px;
+            background-image: url('https://media.licdn.com/dms/image/v2/D5612AQFMxThwQn7HZg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697274440798?e=2147483647&v=beta&t=QLEHZgio8uRKebsNCrjEdh3rOvVmSUa7dSYgzCPBxBo');
+            background-size: 60%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #33003c;
+            font-size: 2.5rem;
+        }
+
+        .service-icon-mobile {
+            height: 120px;
+            background-image: url('https://www.myratechnolabs.com/wp-content/uploads/2020/08/mobile_app_development.png');
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #162e56;
+            font-size: 2.5rem;
+        }
+
+        .service-icon-seo {
+            height: 120px;
+            background-image: url('https://romi.center/wp-content/uploads/2022/08/oblozhka-1024x768.jpg');
+            background-size: 40%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f07f57;
+            font-size: 2.5rem;
+        }
+        
+        .service-icon-consultoria {
+            height: 120px;
+            background-image: url('https://seobarrientos.com/wp-content/uploads/2022/10/consultoria-web-min.png');
+            background-size: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            font-size: 2.5rem;
+        }
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .service-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .service-divider {
+            width: 40px;
+            height: 3px;
+            background-color: #ffcc00;
+            margin-bottom: 15px;
+            border-radius: 2px;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>Servicios</h1>
+            <div class="divider"></div>
+        </div>
+    </header>
+    
+    <section class="services">
+        <div class="container">
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <div class="service-icon-web"></div>
+                    <div class="service-content">
+                        <h3>Desarrollo Web</h3>
+                        <div class="service-divider"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, architecto. Quae itaque quas defectus quia facilis?</p>
+                    </div>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="service-card">
+                    <div class="service-icon-mobile"></div>
+                    <div class="service-content">
+                        <h3>Desarrollo Mobile</h3>
+                        <div class="service-divider"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, architecto. Quae itaque quas defectus quia facilis?</p>
+                    </div>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="service-card">
+                    <div class="service-icon-seo">
+                    </div>
+                    <div class="service-content">
+                        <h3>SEO</h3>
+                        <div class="service-divider"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, architecto. Quae itaque quas defectus quia facilis?</p>
+                    </div>
+                </div>
+                
+                <!-- Servicio 4 -->
+                <div class="service-card">
+                    <div class="service-icon-consultoria"></div>
+                    <div class="service-content">
+                        <h3>Consultoría</h3>
+                        <div class="service-divider"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, architecto. Quae itaque quas defectus quia facilis?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
