@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- RESET Y ESTILOS GENERALES --- */
+        
         * {
             box-sizing: border-box;
             margin: 0;
@@ -16,34 +16,33 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f9fafb; /* Un fondo gris muy suave para que resalte el footer */
+            background-color: #f9fafb; 
             min-height: 100vh;
             display: flex;
-            align-items: flex-end; /* Para pegar el footer abajo si hay poco contenido */
+            align-items: flex-end; 
         }
 
-        /* --- CONTENEDOR PRINCIPAL DEL FOOTER --- */
+    
         .footer {
             background-color: #ffffff;
             width: 100%;
             padding: 60px 40px 30px 40px;
-            border-top: 1px solid #e5e7eb; /* Línea sutil arriba */
+            border-top: 1px solid #e5e7eb; 
         }
 
         .footer-container {
             max-width: 1200px;
             margin: 0 auto;
         }
-
-        /* === PARTE SUPERIOR (Logo + Columnas) === */
+        
         .footer-top {
             display: flex;
-            justify-content: space-between; /* Empuja el logo a la izq y las columnas a la der */
-            flex-wrap: wrap; /* Para móviles */
+            justify-content: space-between; 
+            flex-wrap: wrap; 
             margin-bottom: 60px;
         }
 
-        /* Logotipo */
+    
         .footer-brand {
             flex: 1;
             min-width: 200px;
@@ -56,10 +55,10 @@
             color: #111827;
         }
 
-        /* Contenedor de las 3 columnas de links */
+    
         .footer-links-wrapper {
             display: flex;
-            gap: 80px; /* Espacio entre columnas */
+            gap: 80px; 
             flex-wrap: wrap;
         }
 
@@ -69,11 +68,11 @@
             min-width: 140px;
         }
 
-        /* Títulos de columna (COMMUNITY, ETC) */
+        
         .footer-column h4 {
             font-size: 0.75rem;
             font-weight: 700;
-            color: #6b7280; /* Gris medio */
+            color: #6b7280; 
             text-transform: uppercase;
             margin-bottom: 20px;
             letter-spacing: 0.05em;
@@ -81,33 +80,33 @@
 
         .footer-column a {
             text-decoration: none;
-            color: #4b5563; /* Gris oscuro para links */
+            color: #4b5563; 
             margin-bottom: 12px;
             font-size: 0.95rem;
             transition: color 0.2s;
         }
 
         .footer-column a:hover {
-            color: #000; /* Negro al pasar el mouse */
+            color: #000; 
         }
 
-        /* === PARTE INFERIOR (Copyright + Legal + Redes) === */
+        
         .footer-bottom {
             display: flex;
-            justify-content: space-between; /* Reparte el espacio entre los 3 grupos */
+            justify-content: space-between; 
             align-items: center;
             padding-top: 30px;
             flex-wrap: wrap;
             gap: 20px;
         }
 
-        /* Texto Copyright */
+        
         .copyright {
             color: #6b7280;
             font-size: 0.9rem;
         }
 
-        /* Links Legales (Centro) */
+        
         .legal-links {
             display: flex;
             gap: 30px;
@@ -124,7 +123,7 @@
             color: #111827;
         }
 
-        /* Iconos Redes Sociales */
+        
         .social-icons {
             display: flex;
             gap: 20px;
@@ -137,7 +136,7 @@
 
         .social-link:hover {
             color: #111827;
-            transform: translateY(-2px); /* Pequeño salto al pasar el mouse */
+            transform: translateY(-2px); 
         }
 
         svg {
@@ -146,32 +145,7 @@
             fill: currentColor;
         }
 
-        /* === RESPONSIVE (MÓVIL) === */
-        @media (max-width: 900px) {
-            .footer-top {
-                flex-direction: column;
-            }
-            .footer-links-wrapper {
-                gap: 40px;
-                width: 100%;
-                justify-content: space-between;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .footer-bottom {
-                flex-direction: column;
-                align-items: flex-start; /* Alinea todo a la izquierda en móvil */
-                gap: 25px;
-            }
-            .legal-links {
-                flex-direction: column; /* Links legales uno debajo de otro en móvil muy pequeño */
-                gap: 10px;
-            }
-            .footer-links-wrapper {
-                flex-direction: column; /* Columnas una debajo de otra */
-            }
-        }
+        
     </style>
 </head>
 <body>

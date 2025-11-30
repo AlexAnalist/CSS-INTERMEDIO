@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- BASE --- */
+        
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
@@ -29,7 +29,7 @@
             font-weight: 700;
         }
 
-        /* --- CONTENEDOR FLEX --- */
+        
         .palette-container {
             display: flex;
             gap: 20px;
@@ -39,7 +39,7 @@
             justify-content: center;
         }
 
-        /* --- ESTILO DE LA TARJETA --- */
+        
         .color-card {
             width: 160px;
             background-color: white;
@@ -48,7 +48,7 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             cursor: pointer;
             
-            /* Transición suave para el efecto de crecer */
+            
             transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
             
             display: flex;
@@ -71,19 +71,19 @@
             text-transform: uppercase;
         }
 
-        /* --- EL EFECTO HOVER PARA TODAS --- */
+
         .color-card:hover {
-            /* Se hace un 10% más grande (igual que estaba antes la del centro) */
+            
             transform: scale(1.1) translateY(-10px); 
             
-            /* Sombra más fuerte para dar efecto de elevación */
+
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
             
-            /* IMPORTANTE: Esto asegura que la tarjeta agrandada tape a sus vecinas y no quede abajo */
+            
             z-index: 10; 
         }
 
-        /* Colores específicos */
+        
         .c1 { background-color: #EEEDF0; }
         .c2 { background-color: #A1B5C1; }
         .c3 { background-color: #F9ACA7; }
@@ -91,7 +91,7 @@
         .c5 { background-color: #CF365F; }
 
 
-        /* --- BOTONES Y EXTRAS --- */
+        
         .action-area {
             text-align: center;
             margin-bottom: 60px;
@@ -129,11 +129,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
-        /* Responsive */
-        @media (max-width: 600px) {
-            .color-card { width: 45%; }
-            .color-card:hover { transform: scale(1.05); } /* Menos zoom en móvil */
-        }
+     
     </style>
 </head>
 <body>

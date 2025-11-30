@@ -7,38 +7,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- RESET --- */
+        
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        /* --- FONDO OSCURO (SIMULACIÓN DE OVERLAY) --- */
+        
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #6b7280; /* Fondo gris oscuro como en la imagen */
-            height: 100vh; /* Ocupa toda la altura de la pantalla */
+            background-color: #6b7280; 
+            height: 100vh;
             
-            /* TRUCO FLEXBOX PARA CENTRAR ALGO EN TODA LA PANTALLA */
+        
             display: flex;
-            justify-content: center; /* Centrado horizontal */
-            align-items: center;     /* Centrado vertical */
+            justify-content: center; 
+            align-items: center;     
         }
 
-        /* --- LA VENTANA BLANCA (MODAL) --- */
+        
         .modal-card {
             background-color: white;
             width: 550px;
             padding: 40px 50px;
             border-radius: 8px;
             box-shadow: 0 20px 25px rgba(0,0,0,0.2);
-            position: relative; /* Para poder posicionar la X absoluta si quisiéramos */
+            position: relative; 
             
-            /* FLEXBOX PARA EL CONTENIDO INTERNO (Columna) */
+            
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centra textos y botones horizontalmente */
+            align-items: center; 
             text-align: center;
         }
 
-        /* Botón de cerrar (X) arriba a la derecha */
+        
         .close-icon {
             position: absolute;
             top: 20px;
@@ -49,7 +49,7 @@
         }
         .close-icon:hover { color: #1f2937; }
 
-        /* Textos */
+        
         h2 {
             color: #1f2937;
             margin-bottom: 15px;
@@ -64,16 +64,16 @@
             max-width: 80%;
         }
 
-        /* --- CONTENEDOR DE BOTONES SOCIALES --- */
+    
         .social-buttons {
             display: flex;
-            gap: 15px; /* Espacio entre los botones */
+            gap: 15px; 
             margin-bottom: 30px;
             width: 100%;
             justify-content: center;
         }
 
-        /* Estilo base para los botones */
+        
         .btn {
             display: flex;
             align-items: center;
@@ -86,17 +86,17 @@
             font-size: 0.9rem;
             min-width: 120px;
             transition: opacity 0.2s;
-            gap: 8px; /* Espacio entre icono y texto */
+            gap: 8px; 
         }
 
         .btn:hover { opacity: 0.9; }
 
-        /* Colores específicos */
+        
         .btn-facebook { background-color: #3b5998; }
         .btn-twitter { background-color: #1da1f2; }
         .btn-reddit { background-color: #000000; }
 
-        /* Contador de Shares */
+        
         .share-count {
             font-weight: 700;
             color: #374151;
@@ -104,9 +104,9 @@
             font-size: 1rem;
         }
 
-        /* Enlace inferior de cerrar */
+        
         .close-link {
-            color: #e08e79; /* Color salmón/naranja suave */
+            color: #e08e79;
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 500;
@@ -117,12 +117,8 @@
         svg { width: 18px; height: 18px; fill: currentColor; }
         .close-icon svg { width: 24px; height: 24px; }
 
-        /* Responsive para móviles */
-        @media (max-width: 600px) {
-            .modal-card { width: 90%; padding: 30px 20px; }
-            .social-buttons { flex-direction: column; width: 100%; }
-            .btn { width: 100%; }
-        }
+        
+       
     </style>
 </head>
 <body>

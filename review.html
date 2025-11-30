@@ -7,25 +7,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- RESET Y BASE --- */
+        
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Fondo gris muy suave */
+            background-color: #f3f4f6; 
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        /* --- TARJETA PRINCIPAL --- */
+        
         .review-card {
             background-color: white;
             width: 400px;
             padding: 40px;
             border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08); /* Sombra suave y difusa */
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08); 
             text-align: center;
         }
 
@@ -36,10 +36,10 @@
             font-weight: 700;
         }
 
-        /* --- RESUMEN DE ESTRELLAS (Parte Superior) --- */
+        
         .rating-summary {
-            background-color: #f8fafc; /* Fondo gris azulado muy claro */
-            display: inline-flex; /* Para que el fondo se ajuste al contenido */
+            background-color: #f8fafc; 
+            display: inline-flex; 
             align-items: center;
             padding: 10px 20px;
             border-radius: 50px;
@@ -50,7 +50,7 @@
         .stars {
             display: flex;
             gap: 5px;
-            color: #fbbf24; /* Color amarillo estrella */
+            color: #fbbf24; 
         }
         
         .rating-number {
@@ -65,11 +65,11 @@
             display: block;
         }
 
-        /* --- BARRAS DE PROGRESO (Lista) --- */
+        
         .rating-bars {
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Espacio entre cada fila */
+            gap: 15px; 
             margin-bottom: 30px;
         }
 
@@ -80,10 +80,10 @@
             font-size: 0.95rem;
         }
 
-        /* 1. Etiqueta (Ej: "5 star") */
+        
         .star-label {
-            width: 50px; /* Ancho fijo para alinear todo */
-            color: #3b82f6; /* Azul tipo link */
+            width: 50px; 
+            color: #3b82f6; 
             font-weight: 500;
             text-align: left;
             cursor: pointer;
@@ -91,33 +91,32 @@
         
         .star-label:hover { text-decoration: underline; }
 
-        /* 2. Contenedor de la barra gris */
+        
         .bar-container {
-            flex: 1; /* Ocupa todo el espacio disponible en medio */
+            flex: 1; 
             background-color: #f1f5f9;
             height: 12px;
             border-radius: 10px;
-            margin: 0 15px; /* Separación lateral */
-            overflow: hidden; /* Para recortar los bordes de la barra interna */
+            margin: 0 15px; 
+            overflow: hidden; 
         }
 
-        /* 3. La barra amarilla de relleno */
+        
         .bar-fill {
             height: 100%;
             background-color: #fbbf24;
             border-radius: 10px;
-            /* Efecto visual de la imagen (un poco de sombra/glow amarillo) */
             box-shadow: 0 0 10px rgba(251, 191, 36, 0.5); 
         }
 
-        /* 4. Porcentaje (Ej: "84%") */
+    
         .percentage {
-            width: 40px; /* Ancho fijo para alinear a la derecha */
+            width: 40px; 
             text-align: right;
             color: #4b5563;
         }
 
-        /* --- FOOTER LINK --- */
+
         .footer-link {
             color: #3b82f6;
             text-decoration: none;
@@ -126,7 +125,7 @@
         }
         .footer-link:hover { text-decoration: underline; }
 
-        /* SVG Estrella */
+        
         svg { width: 22px; height: 22px; fill: currentColor; }
 
     </style>

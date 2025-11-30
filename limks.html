@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- ESTILOS BÁSICOS --- */
+        
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Inter', sans-serif;
@@ -20,14 +20,12 @@
         .container { max-width: 1200px; width: 100%; }
         h1 { font-size: 2.5rem; color: #1a202c; margin-bottom: 3rem; max-width: 700px; }
 
-        /* --- LAYOUT --- */
+        
         .content-wrapper { display: flex; gap: 50px; align-items: flex-start; }
         .features-grid { flex: 2; display: flex; flex-wrap: wrap; gap: 30px; }
         .sidebar { flex: 1; border: 1px solid #e5e7eb; border-radius: 12px; padding: 30px; }
 
-        /* =========================================
-           AQUÍ ESTÁ LA LÓGICA DEL HOVER AMARILLO
-           ========================================= */
+      
 
         .feature-card {
             width: calc(50% - 15px);
@@ -36,67 +34,48 @@
             padding: 30px;
             border-radius: 12px;
             cursor: pointer;
-            
-            /* Estado inicial: Blanco */
+    
             background-color: #fff; 
-            border: 1px solid transparent; /* Para que no salte al quitar borde */
+            border: 1px solid transparent;
             
-            /* Transiciones suaves para todo */
+           
             transition: all 0.3s ease;
         }
 
-        /* El círculo del icono (Estado normal: Amarillo) */
+        
         .icon-box {
             width: 50px; height: 50px; border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
             margin-bottom: 20px;
             
-            /* Colores normales */
+            
             background-color: #ffc20e; 
             color: white;
             
             transition: all 0.3s ease;
         }
 
-        /* Textos */
         .feature-card h3 { font-size: 1.25rem; margin-bottom: 10px; font-weight: 700; }
         .feature-card p { font-size: 1rem; color: #4b5563; line-height: 1.5; transition: color 0.3s; }
 
-        /* -------------------------------------------
-           EFECTO HOVER (LA MAGIA)
-           ------------------------------------------- */
-        
-        /* 1. Al pasar el mouse sobre la tarjeta, el FONDO se pone amarillo */
+      
         .feature-card:hover {
             background-color: #ffc20e;
-            transform: translateY(-5px); /* Se levanta un poco */
-            box-shadow: 0 10px 20px rgba(255, 194, 14, 0.3); /* Sombra amarillenta */
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 194, 14, 0.3); 
         }
 
-        /* 2. Al pasar el mouse sobre la tarjeta, el ICONO cambia sus colores (Fondo blanco, icono oscuro) */
+  
         .feature-card:hover .icon-box {
             background-color: white;
             color: #333;
         }
 
-        /* 3. Al pasar el mouse, el texto del párrafo se oscurece un poco para leerse mejor sobre amarillo */
         .feature-card:hover p {
             color: #1f2937;
         }
 
-        /* OPCIONAL: Si quieres mantener la primera tarjeta fija amarilla, descomenta esto. 
-           Si prefieres que todas empiecen blancas, déjalo así. */
-        /* .feature-card.highlight {
-            background-color: #ffc20e;
-        }
-        .feature-card.highlight .icon-box {
-            background-color: white;
-            color: #333;
-        } 
-        */
-
-
-        /* --- ESTILOS SIDEBAR --- */
+        
         .sidebar h3 { font-size: 1.2rem; margin-bottom: 25px; color: #1f2937; }
         .blog-item { display: block; text-decoration: none; margin-bottom: 15px; padding: 15px; border-radius: 8px; transition: background 0.2s; }
         .blog-item:hover { background-color: #f3f4f6; }
