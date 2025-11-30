@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- RESET Y BASE --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Fondo gris muy suave */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* --- TARJETA PRINCIPAL --- */
+        .review-card {
+            background-color: white;
+            width: 400px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08); /* Sombra suave y difusa */
+            text-align: center;
+        }
+
+        h2 {
+            color: #1f2937;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        /* --- RESUMEN DE ESTRELLAS (Parte Superior) --- */
+        .rating-summary {
+            background-color: #f8fafc; /* Fondo gris azulado muy claro */
+            display: inline-flex; /* Para que el fondo se ajuste al contenido */
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 50px;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .stars {
+            display: flex;
+            gap: 5px;
+            color: #fbbf24; /* Color amarillo estrella */
+        }
+        
+        .rating-number {
+            font-weight: 600;
+            color: #4b5563;
+        }
+
+        .total-ratings {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        /* --- BARRAS DE PROGRESO (Lista) --- */
+        .rating-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Espacio entre cada fila */
+            margin-bottom: 30px;
+        }
+
+        /* Fila individual */
+        .bar-row {
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+
+        /* 1. Etiqueta (Ej: "5 star") */
+        .star-label {
+            width: 50px; /* Ancho fijo para alinear todo */
+            color: #3b82f6; /* Azul tipo link */
+            font-weight: 500;
+            text-align: left;
+            cursor: pointer;
+        }
+        
+        .star-label:hover { text-decoration: underline; }
+
+        /* 2. Contenedor de la barra gris */
+        .bar-container {
+            flex: 1; /* Ocupa todo el espacio disponible en medio */
+            background-color: #f1f5f9;
+            height: 12px;
+            border-radius: 10px;
+            margin: 0 15px; /* Separación lateral */
+            overflow: hidden; /* Para recortar los bordes de la barra interna */
+        }
+
+        /* 3. La barra amarilla de relleno */
+        .bar-fill {
+            height: 100%;
+            background-color: #fbbf24;
+            border-radius: 10px;
+            /* Efecto visual de la imagen (un poco de sombra/glow amarillo) */
+            box-shadow: 0 0 10px rgba(251, 191, 36, 0.5); 
+        }
+
+        /* 4. Porcentaje (Ej: "84%") */
+        .percentage {
+            width: 40px; /* Ancho fijo para alinear a la derecha */
+            text-align: right;
+            color: #4b5563;
+        }
+
+        /* --- FOOTER LINK --- */
+        .footer-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .footer-link:hover { text-decoration: underline; }
+
+        /* SVG Estrella */
+        svg { width: 22px; height: 22px; fill: currentColor; }
+
+    </style>
+</head>
+<body>
+
+    <div class="review-card">
+        
+        <h2>Customer reviews</h2>
+
+        <div class="rating-summary">
+            <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <span class="rating-number">4.7 out of 5</span>
+        </div>
+
+        <span class="total-ratings">40 customer ratings</span>
+
+        <div class="rating-bars">
+            
+            <div class="bar-row">
+                <div class="star-label">5 star</div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 84%;"></div>
+                </div>
+                <div class="percentage">84%</div>
+            </div>
+
+            <div class="bar-row">
+                <div class="star-label">4 star</div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 9%;"></div>
+                </div>
+                <div class="percentage">9%</div>
+            </div>
+
+            <div class="bar-row">
+                <div class="star-label">3 star</div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 4%;"></div>
+                </div>
+                <div class="percentage">4%</div>
+            </div>
+
+            <div class="bar-row">
+                <div class="star-label">2 star</div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 2%;"></div>
+                </div>
+                <div class="percentage">2%</div>
+            </div>
+
+            <div class="bar-row">
+                <div class="star-label">1 star</div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: 1%;"></div>
+                </div>
+                <div class="percentage">1%</div>
+            </div>
+
+        </div>
+
+        <a href="#" class="footer-link">How do we calculate ratings?</a>
+
+    </div>
+
+</body>
+</html>

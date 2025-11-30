@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Periódica</title>
+    <style>
+      
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+      
+        .tabla-periodica {
+            width: 100%;
+            max-width: 1200px; 
+            margin: 0 auto;
+            overflow: hidden; 
+        }
+
+    
+        .celda {
+            
+            width: calc(100% / 18);
+            
+            
+            height: 5.5vw; 
+            max-height: 60px;
+            
+            float: left; 
+            
+            border: 1px solid #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            /* Tipografía responsiva usando vw */
+            font-size: 0.8vw; 
+        }
+
+        /* Colores según grupo de elementos*/
+        .no-metal { background-color: #aaffaa; }
+        .gas-noble { background-color: #ffaaaa; }
+        .metal-alcalino { background-color: #ffcc00; }
+        .metal-alcalinoterreo { background-color: #ffff00; }
+        .metaloide { background-color: #cccc99; }
+        .halogeno { background-color: #ffccff; }
+        .metal-transicion { background-color: #dddddd; }
+        .otros-metales { background-color: #cccccc; }
+
+  
+        .vacia {
+            border: none;
+            background: transparent;
+        }
+
+        .simbolo {
+            font-weight: bold;
+            font-size: 1.2em; 
+        }
+
+        .nombre {
+            font-size: 0.8em;
+            display: block;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <h1>Tabla Periódica</h1>
+
+    <div class="tabla-periodica">
+        
+        <div class="celda no-metal"><span class="simbolo">H</span><span class="nombre">Hidrógeno</span></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div>
+        <div class="celda gas-noble"><span class="simbolo">He</span><span class="nombre">Helio</span></div>
+
+        <div class="celda metal-alcalino"><span class="simbolo">Li</span><span class="nombre">Litio</span></div>
+        <div class="celda metal-alcalinoterreo"><span class="simbolo">Be</span><span class="nombre">Berilio</span></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div>
+        <div class="celda metaloide"><span class="simbolo">B</span><span class="nombre">Boro</span></div>
+        <div class="celda no-metal"><span class="simbolo">C</span><span class="nombre">Carbono</span></div>
+        <div class="celda no-metal"><span class="simbolo">N</span><span class="nombre">Nitrógeno</span></div>
+        <div class="celda no-metal"><span class="simbolo">O</span><span class="nombre">Oxígeno</span></div>
+        <div class="celda halogeno"><span class="simbolo">F</span><span class="nombre">Flúor</span></div>
+        <div class="celda gas-noble"><span class="simbolo">Ne</span><span class="nombre">Neón</span></div>
+
+        <div class="celda metal-alcalino"><span class="simbolo">Na</span><span class="nombre">Sodio</span></div>
+        <div class="celda metal-alcalinoterreo"><span class="simbolo">Mg</span><span class="nombre">Magnesio</span></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div><div class="celda vacia"></div><div class="celda vacia"></div>
+        <div class="celda vacia"></div>
+        <div class="celda otros-metales"><span class="simbolo">Al</span><span class="nombre">Aluminio</span></div>
+        <div class="celda metaloide"><span class="simbolo">Si</span><span class="nombre">Silicio</span></div>
+        <div class="celda no-metal"><span class="simbolo">P</span><span class="nombre">Fósforo</span></div>
+        <div class="celda no-metal"><span class="simbolo">S</span><span class="nombre">Azufre</span></div>
+        <div class="celda halogeno"><span class="simbolo">Cl</span><span class="nombre">Cloro</span></div>
+        <div class="celda gas-noble"><span class="simbolo">Ar</span><span class="nombre">Argón</span></div>
+
+        <div class="celda metal-alcalino"><span class="simbolo">K</span><span class="nombre">Potasio</span></div>
+        <div class="celda metal-alcalinoterreo"><span class="simbolo">Ca</span><span class="nombre">Calcio</span></div>
+        <div class="celda metal-transicion"><span class="simbolo">Sc</span><span class="nombre">Escandio</span></div>
+        <div class="celda metal-transicion"><span class="simbolo">Ti</span><span class="nombre">Titanio</span></div>
+        <div class="celda metal-transicion"><span class="simbolo">V</span><span class="nombre">Vanadio</span></div>
+        <div class="celda metal-transicion"><span class="simbolo">Cr</span><span class="nombre">Cromo</span></div>
+        <div class="celda metal-transicion"><span class="simbolo">Mn</span><span class="nombre">Manganeso</span></div>
+        <div class="celda metal-transicion"><span class="simbolo">Fe</span><span class="nombre">Hierro</span></div>
+        <div class="celda metal-transicion"><span class="simbolo">Co</span><span class="nombre">Cobalto</span></div>
+        <div class="celda metal-transicion"><span class="simbolo">Ni</span><span class="nombre">Níquel</span></div>
+        <div class="celda metal-transicion"><span class="simbolo">Cu</span><span class="nombre">Cobre</span></div>
+        <div class="celda metal-transicion"><span class="simbolo">Zn</span><span class="nombre">Zinc</span></div>
+        <div class="celda otros-metales"><span class="simbolo">Ga</span><span class="nombre">Galio</span></div>
+        <div class="celda metaloide"><span class="simbolo">Ge</span><span class="nombre">Germanio</span></div>
+        <div class="celda metaloide"><span class="simbolo">As</span><span class="nombre">Arsénico</span></div>
+        <div class="celda no-metal"><span class="simbolo">Se</span><span class="nombre">Selenio</span></div>
+        <div class="celda halogeno"><span class="simbolo">Br</span><span class="nombre">Bromo</span></div>
+        <div class="celda gas-noble"><span class="simbolo">Kr</span><span class="nombre">Kriptón</span></div>
+
+        </div>
+</body>
+</html>
